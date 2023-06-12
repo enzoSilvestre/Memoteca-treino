@@ -8,59 +8,114 @@
 
   <form>
     <div class="box-input-pensamentos">
-      <label for="">Pensamento</label>
-      <input id="input_pensamento" type="textarea" />
-      <label for="">Autor(a) ou Fonte</label>
-      <input type="textarea" />
+      <div class="box-input-label-pensamento">
+      <label for="pensamento">Pensamento</label>
+      <input
+        id="input_pensamento"
+        name="input_pensamento"
+        placeholder="Digite o Pensamento"
+        type="textarea"
+        [(ngModel)]="pensamento.conteudo"
+      />
+    </div>
+    <div class="box-input-label-pensamento">
+      <label for="autoria">Autor(a) ou Fonte</label>
+      <input
+        class="input"
+        id="autoria"
+        name="autoria"
+        placeholder="Digite sua autoria ou fonte"
+        type="textarea"
+        [(ngModel)]="pensamento.autoria"
+      />
+     </div>
     </div>
     <div class="box-radio-buttons">
       <h3>Selecione o modelo do Card:</h3>
-      <div class="radio-buttons" >
-
-        <input type="radio" />
+      <div class="radio-buttons">
+        <div class="box-input-radio">
+        <input
+          id="modelo1"
+          value="modelo1"
+          name="modelo-card"
+          type="radio"
+          [(ngModel)]="pensamento.modelo"
+        />
         <label for="">Modelo 1</label>
-        <input type="radio" />
+      </div>
+      <div class="box-input-radio">
+        <input
+          id="modelo2"
+          value="modelo2"
+          name="modelo-card"
+          type="radio"
+          [(ngModel)]="pensamento.modelo"
+        />
         <label for="">Modelo 2</label>
-        <input type="radio" />
+      </div>
+      <div class="box-input-radio">
+        <input
+          id="modelo3"
+          value="modelo3"
+          name="modelo-card"
+          type="radio"
+          [(ngModel)]="pensamento.modelo"
+        />
         <label for="">Modelo 3</label>
       </div>
+      </div>
     </div>
-    <div class="modelos" >
+    <div class="modelos">
       <div class="modelo1">
-        <p>  Prévia:</p>
-          <div class="modelo1__main">
-            <img src="../../../../assets/imagens//modelo1.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-            <p><b>Autora da Silva Sauro</b></p>
-          </div>
-      </div>
-      <div class="modelo1">
-        <p>  Prévia:</p>
-          <div class="modelo1__main">
-            <img src="../../../../assets/imagens//modelo1.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-            <p><b>Autora da Silva Sauro</b></p>
+        <p>Prévia:</p>
+        <div class="modelo1__main">
+          <img src="../../../../assets/imagens//modelo1.png" alt="" />
+          <p>
+            {{ pensamento.conteudo }}
+          </p>
 
-          </div>
+          <p>
+            <b>{{ pensamento.autoria }}</b>
+          </p>
+        </div>
       </div>
       <div class="modelo1">
-        <p>  Prévia:</p>
-          <div class="modelo1__main">
-            <img src="../../../../assets/imagens//modelo1.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-            <p><b>Autora da Silva Sauro</b></p>
-          </div>
+        <p>Prévia:</p>
+        <div id="modelo2_main" class="modelo1__main">
+          <img src="../../../../assets/imagens//modelo2.png" alt="" />
+          <p>
+            {{ pensamento.conteudo }}
+          </p>
+
+          <p>
+            <b>{{ pensamento.autoria }}</b>
+          </p>
+        </div>
       </div>
-      <div class="modelo2"></div>
-      <div class="modelo3"></div>
+      <div class="modelo1">
+        <p>Prévia:</p>
+        <div id="modelo3_main" class="modelo1__main">
+          <img src="../../../../assets/imagens//modelo3.png" alt="" />
+          <p>
+            {{ pensamento.conteudo }}
+          </p>
+
+          <p>
+            <b>{{ pensamento.autoria }}</b>
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="box-buttons">
-      <button class="botao">Salvar</button>
-      <button class="botao">Cancelar</button>
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button
+        routerLink="/listarPensamento"
+        (click)="cancelarPensamento()"
+        class="botao"
+      >
+        Cancelar
+      </button>
     </div>
   </form>
 </section>

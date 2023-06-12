@@ -1,0 +1,11 @@
+<section class="containerListagem">
+  <header class="header-listagem">
+    <h2 class="ff-inter" >Meu Mural</h2>
+    <button class="botao" routerLink="/criarPensamento"  >Adicionar Pensamento</button>
+  </header>
+  <div class="mural">
+    <div *ngFor=" let i of listaPensamentos" >
+      <app-pensamento [pensamento]="i"></app-pensamento>
+    </div>
+  </div>
+</section>

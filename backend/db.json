@@ -1,0 +1,64 @@
+{
+  "pensamentos": [
+    {
+      "id": 2,
+      "conteudo": "Estudando Java",
+      "autoria": "Dev Alura",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é o melhor so não melhor que react'",
+      "autoria": "Dev Alura",
+      "modelo": "modelo3"
+    },
+    {
+      "conteudo": "Hoje eu estou Feliz e acordei com o pé direito",
+      "autoria": "Enzo Silvestre",
+      "modelo": "modelo3",
+      "id": 4
+    },
+    {
+      "conteudo": "meuzobvosdoslajndjksaopdnsajkdnsajkndjkasndkjsandjksandkjsandkjasnjkdnaskjdnsjkdandkjsandjksandkjasndkjsanjkdnsakjdnsajknaksjndjkasndjksandjksndkjsandjksanjkdnsakjdnsjkndsjkandjksandjkasndkjsandjkansjkdnasjkndasjkndajskndkjsandkjsandkjsankjdasnjkdnkjanjkdnkjdsankjdnakjdnjksandkasndjkasnkjdan",
+      "autoria": "Enzola",
+      "modelo": "modelo2",
+      "id": 5
+    },
+    {
+      "conteudo": "fds",
+      "autoria": "fds",
+      "modelo": "modelo2",
+      "id": 6
+    },
+    {
+      "conteudo": "vai quebrar?",
+      "autoria": "enzo",
+      "modelo": "modelo3",
+      "id": 7
+    },
+    {
+      "conteudo": "dsadas",
+      "autoria": "das",
+      "modelo": "modelo1",
+      "id": 8
+    },
+    {
+      "conteudo": "dssda",
+      "autoria": "dsa",
+      "modelo": "modelo2",
+      "id": 9
+    },
+    {
+      "conteudo": "Aprendendo dfsfdsfdsfdsfdsfdsfdsadsadsaddddddddddddddddddddddddddddddddddddddddddddddddddddddddsfdsfdsfdsfdsfdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssfdsfdsfdsfsdfdsfdsfdsfdsfdsfsfsdfsdfdsfsdfdsdsfdsfsddffss",
+      "autoria": "luvia",
+      "modelo": "modelo1",
+      "id": 10
+    },
+    {
+      "conteudo": "meuzovos",
+      "autoria": "lado",
+      "modelo": "modelo3",
+      "id": 11
+    }
+  ]
+}

@@ -1,6 +1,4 @@
 .criar-pensamentos form {
-  width: 790px;
-  height: 700px;
   background-color: #c4edff;
   display: flex;
   flex-direction: column;
@@ -15,22 +13,31 @@
 .box-input-pensamentos {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 20px;
   width: 100%;
-  height: 40%;
+  height: 30%;
   justify-content: center;
   align-items: center;
-}
-.box-input-pensamentos input {
-  width: 80%;
-  height: 50px;
-  border-radius: 10px;
-  border-color: transparent;
+  padding-top: 2rem;
 }
 
+.box-input-label-pensamento{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.box-input-label-pensamento input {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border-color: transparent;
+}
 .box-input-pensamentos label {
   width: 80%;
   color: #154580;
+  padding-bottom: 1.5%;
 }
 
 #input_pensamento {
@@ -45,25 +52,25 @@
   height: 12%;
   flex-direction: column;
   gap: 15px;
-  justify-content: center;
-  align-items: center;
 }
 
 .modelos {
   display: flex;
   width: 80%;
   height: 31%;
-  gap: 17px;
+  gap: 2%;
 }
 
 .box-radio-buttons h3 {
   width: 89%;
   color: #154580;
   font-size: 17px;
+  padding-top: 1.5%;
+  align-self: center;
 }
 
 .modelo1 {
-  width: 33%;
+  width: 28%;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -71,7 +78,7 @@
 
 .modelo1__main {
   width: 100%;
-  height: 90%;
+  height: 80%;
   background-color: rgb(255, 255, 255);
   box-shadow: 8px 8px 0px #154580;
 }
@@ -80,42 +87,298 @@
   padding-top: 0.8rem;
   padding-left: 0.8rem;
 }
+
+#modelo2_main {
+  box-shadow: 8px 8px 0px #6bd1ff;
+}
+
+#modelo3_main {
+  box-shadow: 8px 8px 0px #84eec1;
+}
+
 .modelo1__main p {
   font-size: 12px;
   padding-top: 0.8rem;
   padding-left: 0.8rem;
+  word-wrap: break-word;
 }
 .modelo1__main p b {
-  font-size: 13px;
-  padding-bottom: 1rem;
+  font-size: 15px;
 }
 
 .radio-buttons {
   display: flex;
-  width: 100%;
-  align-items: center;
-  margin-left: 80px;
+  width: 79%;
+  justify-content: space-around;
 }
 
-.radio-buttons input {
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
-}
 
-.radio-buttons label {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  margin-right: 105px;
-}
-
-.box-buttons{
-  width: 100%;
-  height: 17%;
+.box-input-radio {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
+  gap: 5%;
+}
+
+.box-input-radio label {
+  width: 120px;
+}
+
+.box-buttons {
+  display: flex;
+  gap: 5%;
+}
+
+@media(min-width: 1024px) {
+  .criar-pensamentos form {
+    width: 80%;
+    height: 85vh;
+  }
+
+  .box-input-pensamentos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .box-input-label-pensamento{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .box-input-label-pensamento input {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border-color: transparent;
+  }
+
+  .box-input-pensamentos label {
+    width: 80%;
+    padding-bottom: 1.5%;
+  }
+
+  #input_pensamento {
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+  }
+
+  .box-radio-buttons {
+    display: flex;
+    width: 80%;
+    height: 40%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .radio-buttons {
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+  }
+
+
+  .box-radio-buttons h3 {
+    padding-top: 2%;
+    align-self: flex-start;
+  }
+
+  .modelos {
+    padding-bottom: 3%;
+    height: 75%;
+  }
+
+
+  .modelo1__main {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .modelo1__main img {
+    width: 30px;
+  }
+
+
+  .modelo1__main p b {
+    font-size: 12px;
+  }
+
+  .box-buttons {
+    padding-bottom: 3%;
+  }
+
+}
+
+@media(min-width: 1440px) {
+  .criar-pensamentos form {
+    width: 85%;
+    height: 85vh;
+  }
+
+  .box-input-pensamentos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .box-input-label-pensamento{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .box-input-label-pensamento input {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border-color: transparent;
+  }
+
+  .box-input-pensamentos label {
+    width: 80%;
+    padding-bottom: 1.5%;
+  }
+
+  #input_pensamento {
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+  }
+
+  .box-radio-buttons {
+    display: flex;
+    width: 80%;
+    height: 35%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .radio-buttons {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+  }
+
+
+  .box-radio-buttons h3 {
+    padding-top: 2%;
+    align-self: flex-start;
+  }
+
+  .modelos {
+    padding-bottom: 3%;
+    height: 75%;
+  }
+
+
+  .modelo1__main {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .modelo1__main img {
+    width: 30px;
+  }
+
+
+  .modelo1__main p b {
+    font-size: 12px;
+  }
+
+  .box-buttons {
+    padding-bottom: 3%;
+  }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+  .criar-pensamentos form {
+    width: 80%;
+    height: 80vh;
+  }
+
+  .box-input-pensamentos {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .box-input-pensamentos input {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border-color: transparent;
+  }
+
+  .box-input-pensamentos label {
+    width: 80%;
+    color: #154580;
+  }
+
+  #input_pensamento {
+    height: 60px;
+    border-radius: 10px;
+    border-color: transparent;
+  }
+
+  .box-radio-buttons {
+    display: flex;
+    width: 80%;
+    height: 17%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .radio-buttons {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+  }
+
+
+  .box-radio-buttons h3 {
+    align-self: flex-start;
+  }
+
+  .modelos {
+    padding-bottom: 3%;
+  }
+
+
+  .modelo1__main {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 8px 8px 0px #154580;
+  }
+
+  .modelo1__main img {
+    width: 30px;
+  }
+
+
+  .modelo1__main p b {
+    font-size: 12px;
+  }
+
+  .box-buttons {
+    padding-bottom: 3%;
+  }
 }
